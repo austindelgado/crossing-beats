@@ -6,7 +6,6 @@ function App() {
 
   var sound = new Howl({
     src: ['/songs/scruffy6AM.mp3'],
-    html5:true,
     loop: true,
     onplayerror: function() {
       console.log('error');
