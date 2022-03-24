@@ -15,6 +15,6 @@ function Clock() {
             {clockState}
         </div>
     )
-};
+}
 
 export default Clock;
