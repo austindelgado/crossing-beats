@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Howl, Howler} from 'howler';
+import Clock from './components/clock';
 
 function App() {
 
@@ -14,15 +15,10 @@ function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={() => sound.play()}>
-          PLAY
-        </button>
-      </header>
+      <Clock></Clock>
+      <button onClick={() => sound.play()}>
+        PLAY
+      </button>
     </div>
   );
 }
