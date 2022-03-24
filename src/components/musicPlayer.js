@@ -57,7 +57,10 @@ function TransitionHour()
 function Play()
 {
     isPlaying = !isPlaying; // Toggle playing
-    hours[currentHour].play(); // Fade in?
+    if (isPlaying)
+        hours[currentHour].play();
+    else
+        hours[currentHour].stop();
 }
 
 // https://stackoverflow.com/questions/9337616/calculate-amount-of-time-until-the-next-hour
