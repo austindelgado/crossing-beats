@@ -10,6 +10,7 @@
 
 # production
 /build
+/public/songs
 
 # misc
 .DS_Store
